@@ -1,0 +1,7 @@
+<h1> Articles  4 u</h1>
+
+<% @articles.each do |a| %>
+  <h2><%= t.title  %></h2>
+  <%= link_to "more...", article_path(a) %>
+
+<% end %>
