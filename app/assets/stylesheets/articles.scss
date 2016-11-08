@@ -1,3 +1,45 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  background-color: black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-flash {
+   animation-name: text-flash;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes text-flash {
+    from {color: white;}
+    to {color: #00ff00;}
+}
+
+.flash2 {
+   animation-name: flash2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash2 {
+    from {color: #33fff2;}
+    to {color: white;}
+}
+
+.lnk-text {
+  color: white;
+  text-decoration: none;
+}
